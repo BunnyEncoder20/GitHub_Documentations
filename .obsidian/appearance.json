@@ -1,7 +1,9 @@
 {
-  "interfaceFontFamily": "Arial Rounded MT,Bookman Old Style",
+  "interfaceFontFamily": "JetBrains Mono,Apple SD Gothic Neo",
   "cssTheme": "Shimmering Focus",
   "accentColor": "#904df5",
-  "textFontFamily": "Arial Rounded MT,JetBrainsMono Nerd Font",
-  "baseFontSize": 18
+  "textFontFamily": "JetBrains Mono,Arial Rounded MT",
+  "baseFontSize": 18,
+  "monospaceFontFamily": "JetBrains Mono",
+  "translucency": true
 }
