@@ -167,3 +167,37 @@ const data:number[] | string[] = ["2", 3]  // will give error cause this means t
 
 const data:(number|string)[] = [1,"2",3]  // this will work
 ```
+
+## Enums
+
+- When we want to give restrictive options in code, **enums** are very good 
+```typescript
+enum seat_choice = {
+	AISLE = "aisle",
+	MIDDLE = "middle",
+	WINDOW = "window",
+	FIRST_CLASS = "first"
+}
+
+const new_seat = seat_choice.WINDOW // this has the value = "window"
+```
+- While making node apps, these are extensively used in things like constants, such as status codes :
+```typescript
+const enum StatusCodes = {
+    OK = 200,
+    CREATED = 201,
+    BAD_REQUEST = 400,
+    UNAUTHORIZED = 401,
+    FORBIDDEN = 403,
+    NOT_FOUND = 404,
+    CONFLICT = 409,
+    UNPROCESSABLE = 422,
+    INTERNAL_SERVER_ERROR = 500
+};
+
+export {
+    StatusCodes
+};
+```
+
+
