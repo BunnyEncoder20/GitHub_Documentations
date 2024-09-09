@@ -204,7 +204,6 @@ export {
 ## Interface
 
 - you could see interface as a lose overview of something like a class 
-
 ```typescript
 interface user = {
 	readonly dbID:number,
@@ -259,6 +258,34 @@ interface admin extends user {
 
 - **NOTE** that though very similar to *type*, **interfaces** are different. They can add new values to themselves by reopening and can be inherited. 
 - **types** cannot add more properties to themselves and can inherit properties from other types only by using the "**&**" symbol.
+- Interfaces are used mostly to make sure that certain properties and methods are followed at all cost. We can add more properties if we want to but, not less than what is defined in the interfaces, if it is implemented into a class
+```typescript
+interface camera {
+	camera_mode:string,
+	filter:string,
+	burst:number
+}
+
+class insta implements camera {
+	// we must make sure that all the properties of interface camera are taken care of.
+	constructor(
+		public camera_mode:string,
+		public filter:string,
+		public burst:number
+	){}
+}
+
+class youthoob implements camera {
+	// if we want we can have more properties, but must include the ones in the implemented interface
+	constructor (
+		public camera_mode:string,
+		public filter:string,
+		public burst:number,
+		public short:string
+	){}
+}
+```
+
 
 ## Classes in TS
 
