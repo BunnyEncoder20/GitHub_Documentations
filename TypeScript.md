@@ -382,9 +382,22 @@ funciton indentityFunc<Type>(val:Type):Type{
 ```
 - Note that *type* name could be anything, so people usually use a smaller format eg:
 ```typescript
-funciton indentityFunc<T>(val:T):T{
+funciton indentityFunc<T,>(val:T):T{
 	return val
 }
 ```
+- The **,** within the <T,> is there to signal that this is not a *JSX* tag but a TS type.
 - You can also use custom types like *interfaces*,*types*, etc
+```typescript
+interface bottle {
+	brand:string,
+	bottle_id:number,
+	bottle_type:string
+}
+
+funciton indentityFunc<bottle,>(val:bottle):bottle{
+	return val
+}
+```
+
 
