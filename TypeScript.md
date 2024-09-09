@@ -260,3 +260,77 @@ interface admin extends user {
 - **NOTE** that though very similar to *type*, **interfaces** are different. They can add new values to themselves by reopening and can be inherited. 
 - **types** cannot add more properties to themselves and can inherit properties from other types only by using the "**&**" symbol.
 
+## Classes in TS
+
+- Similar to classes in JS, just typed
+
+```typescript
+class User {
+	email:string,
+	name:string
+	constructor(email:string,name:string){
+		this.email = email;
+		this.name = name;
+	}
+}
+
+const new_user = new User("bunny@gmail.com","bunny");
+```
+- **Note** that the properties of the class should have proper initialisers.
+- There are *access modifiers* in TS also namely : 
+	- **private** : this doesn't allow access to that property outside the class
+	- **public** : any property by default is public
+	- **protected** : this means that the property will be accessible within the class and any other child class which inherits from the class. (**Reminder** by default, private variables are not inherited by children class) 
+- For production level code, sometimes, people just define the access of variables in the constructor params itself
+
+```typescript
+// generates exactly same JS as above example
+class User {
+	constructor(
+		public email:string,
+		public name:string,
+		private userID:number
+	){
+		this.email = email;
+		this.name = name;
+		this.userID = generateUserID()
+	}
+}
+
+const new_user = new User("bunny@gmail.com","bunny");
+console.log(new_user.userID) // will gives error
+```
+
+- Generally to access private variables, we want to use getters and setters in TS:
+```typescript
+class User {
+	constructor(
+		public email:string,
+		public name:string,
+		private userID:number,
+		private city:string = "Mumbai"
+	){
+		this.email = email;
+		this.name = name;
+		this.userID = generateUserID()
+	}
+
+	// this is a getter function
+	get get_userID():number{
+		return this.userID
+	}
+
+	get get_companyEmail(name:string,empID:number):string{
+		return `${name}.${empID}@apple.com`
+	}
+
+	// this is a setter function
+	set set_cityName(city:string){
+		this.city = city
+	}
+}
+
+const new_user = new User("bunny@gmail.com","bunny");
+console.log(new_user.get_userID())  // this will not throw an error now
+```
+- **Notice** how the *set* function do not have a return type hint as these functions are not meant to return anything.
