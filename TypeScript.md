@@ -361,3 +361,30 @@ const new_user = new User("bunny@gmail.com","bunny");
 console.log(new_user.get_userID())  // this will not throw an error now
 ```
 - **Notice** how the *set* function do not have a return type hint as these functions are not meant to return anything.
+
+
+## Generics 
+
+- Behind the scenes, makes all of our components reusable.
+- It was made to define the types of identity functions(which take in and return the same type) however these could also take in various types
+```javascript
+function identityFunc(val){
+	return val
+}
+```
+- We want to type the above function, basically we want the incoming param type to also be the return type of the function. 
+- But the incoming type of the param could be anything. We could tackle this partially by using *any* or **|** but that would not be a ideal solution.
+- Hence we use Generics for situations like this. Defined by **<>** 
+```typescript
+funciton indentityFunc<Type>(val:Type):Type{
+	return val
+}
+```
+- Note that *type* name could be anything, so people usually use a smaller format eg:
+```typescript
+funciton indentityFunc<T>(val:T):T{
+	return val
+}
+```
+- You can also use custom types like *interfaces*,*types*, etc
+
