@@ -201,3 +201,62 @@ export {
 ```
 
 
+## Interface
+
+- you could see interface as a lose overview of something like a class 
+
+```typescript
+interface user = {
+	readonly dbID:number,
+	readonly userID:number,
+
+	email:string,
+	name:string,
+	batchNo:number,
+
+	startTrail():string   // is a function which retunrs a string
+	getCoupon(couponName:string, off:number):number // also a function with types params and returns a number
+}
+
+const new_user = {
+	dbID:22,
+	userID:33,
+
+	email:"b@b.com,
+	name:"bunny",
+	batchNo:44,
+
+	startTrail: () => { return "Congrats Trail Started";}
+	getCoupon: (cName:"bunny",off:10) = {return 10}
+}
+```
+
+- If we want to add more properties to a interface, we can simply redeclare the interface and do so. This is called *re-opening* of a interface.
+```typescript
+interface user = {
+	readonly dbID:number,
+	readonly userID:number,
+
+	email:string,
+	name:string,
+	batchNo:number,
+
+	startTrail():string 
+	getCoupon(couponName:string, off:number):number
+}
+
+interface user = {
+	github_token:string
+}
+```
+
+- We can also inherit from other interfaces, similar to classes.
+```typescript
+interface admin extends user {
+	role:"admin"|"ta"|"qa"|"intern"|"emp"
+}
+```
+
+- **NOTE** that though very similar to *type*, **interfaces** are different. They can add new values to themselves by reopening and can be inherited. 
+- **types** cannot add more properties to themselves and can inherit properties from other types only by using the "**&**" symbol.
+
