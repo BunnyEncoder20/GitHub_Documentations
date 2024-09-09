@@ -130,3 +130,40 @@ type User = {
 	creditCard? : number 
 }
 ```
+
+
+## Unions
+
+- Union is the combination of 2 or more types.
+- We use the **|** operator for that.
+
+```typescript
+type user = {
+	name : string,
+	id : number
+}
+
+type admin = {
+	emp_name : string
+	emp_id : number
+}
+
+let new_user:user|admin = {}
+```
+- If we expect one or more type of parameters, then before doing any manipulations on the param, we need to verify it's type
+```typescript
+let func1 = (id:number|string) => {
+	if (typeof id=="number")
+		id.toLowerCase()
+	elsif (typeof id=="string")
+		id+10
+	return id
+}
+```
+- This is called as **union narrowing**
+- This is useful in arrays also if we want our array to have multiple types within it 
+```typescript
+const data:number[] | string[] = ["2", 3]  // will give error cause this means that data can be either complete array of numbers or complete array of strings
+
+const data:(number|string)[] = [1,"2",3]  // this will work
+```
