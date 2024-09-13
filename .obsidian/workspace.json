@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript.md"
+                "file": "README.md"
               }
             }
           },
@@ -97,7 +97,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "TypeScript.md",
+                "file": "README.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,8 +208,15 @@
   },
   "active": "62c496b9ef4862f9",
   "lastOpenFiles": [
-    "github_token.txt",
     "TypeScript.md",
+    "The Anki Algorithm (Spaced Repetition).md",
+    "images/Screenshot 2024-09-13 at 9.58.47 AM.png",
+    "images/Pasted image 20240913100814.png",
+    "images",
+    "untitled folder",
+    "Pasted image 20240913100814.png",
+    "Screenshot 2024-09-13 at 9.58.47 AM.png",
+    "github_token.txt",
     "Server.md",
     "CodeLingo.md",
     "Production App Setup.md",
@@ -225,10 +232,6 @@
     "Assets/Pasted image 20240722124047.png",
     "Assets/Pasted image 20240722112726.png",
     "Assets/Pasted image 20240722112336.png",
-    "Assets/Pasted image 20240722112239.png",
-    "Assets/Pasted image 20240722111800.png",
-    "Assets/Pasted image 20240722111628.png",
-    "Assets/Pasted image 20240722111620.png",
     "DBMS/05 Data Models and It's Types/Data Models.md",
     "DBMS/07 SQL",
     "DBMS/06 RDBMS/Super Key.md",
@@ -245,15 +248,11 @@
     "DBMS/05 Data Models and It's Types/NoSQL Data Models.md",
     "DBMS/05 Data Models and It's Types/Network Data Model.md",
     "DBMS/05 Data Models and It's Types/Hierarchical Data Model.md",
-    "DBMS/05 Data Models and It's Types/Entity-Relationship Model.md",
     "DBMS/05 Data Models and It's Types",
     "Excalidraw/TimeLine 3 months.excalidraw",
     "DBMS/04 DBMS Architectures",
     "Excalidraw",
     "DBMS/03 Abstraction",
-    "DBMS/Types of DB/Untitled 1",
-    "DBMS/02 DB Management Systems",
-    "DBMS/01 Types of DBs",
     "Untitled.canvas"
   ]
 }
