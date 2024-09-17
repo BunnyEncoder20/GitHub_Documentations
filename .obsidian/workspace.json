@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "DSA/DSA Patterns.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5512f114c5771b27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA/Recursion.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -38,7 +51,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "DSA/Recursion.md"
               }
             }
           },
@@ -97,7 +110,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README.md",
+                "file": "DSA/Recursion.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "DSA/Recursion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "DSA/Recursion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,14 +219,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "62c496b9ef4862f9",
+  "active": "5512f114c5771b27",
   "lastOpenFiles": [
-    "TypeScript.md",
+    "images/Pasted image 20240917094200.png",
+    "DSA/DSA Patterns.md",
+    "DSA/Recursion.md",
+    "README.md",
     "The Anki Algorithm (Spaced Repetition).md",
+    "CodeLingo/TypeScript.md",
+    "CodeLingo/The Anki Algorithm (Spaced Repetition).md",
+    "CodeLingo/github_token.txt",
+    "CodeLingo",
+    "untitled folder",
+    "DSA",
+    "TypeScript.md",
     "images/Screenshot 2024-09-13 at 9.58.47 AM.png",
     "images/Pasted image 20240913100814.png",
     "images",
-    "untitled folder",
     "Pasted image 20240913100814.png",
     "Screenshot 2024-09-13 at 9.58.47 AM.png",
     "github_token.txt",
@@ -222,7 +244,6 @@
     "Production App Setup.md",
     "Client.md",
     "Welcome.md",
-    "README.md",
     "Most Important Interview Core Questions.md",
     "DBMS/07 SQL/Most Important Interview Core Questions.md",
     "DBMS/07 SQL/SQL.md",
@@ -244,15 +265,8 @@
     "DBMS/06 RDBMS/Candidate Key.md",
     "DBMS/06 RDBMS",
     "DBMS/05 Data Models and It's Types/Relational Data Model.md",
-    "DBMS/05 Data Models and It's Types/Object-Oriented Data Model.md",
-    "DBMS/05 Data Models and It's Types/NoSQL Data Models.md",
-    "DBMS/05 Data Models and It's Types/Network Data Model.md",
-    "DBMS/05 Data Models and It's Types/Hierarchical Data Model.md",
     "DBMS/05 Data Models and It's Types",
     "Excalidraw/TimeLine 3 months.excalidraw",
-    "DBMS/04 DBMS Architectures",
-    "Excalidraw",
-    "DBMS/03 Abstraction",
     "Untitled.canvas"
   ]
 }

@@ -38,3 +38,6 @@ Good = 10 min
 
 - What if someone doesn't see the cards on the designated day ?
 - How to store the data related to the spaced repetition of each card/question efficiently in mongoDB
+- Spaced repetition will only work on questions which the user has attempted before. How to introduce new questions into the mix ?
+- **Where do I get the questions from ?**
+- 
